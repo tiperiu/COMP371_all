@@ -1,0 +1,36 @@
+{
+    "geometry":[{
+        "type":"sphere",
+        "centre":[0, 0, -4],
+        "radius":2,
+        
+        "ac":[0,1,0],
+        "dc":[1,0,0],
+        "sc":[1,1,1],
+        
+        "ka":1,
+        "kd":1,
+        "ks":1,
+        
+        "pc":10
+    }
+    ],
+    "light":[{
+        "type":"point",
+        "centre":[0, 0, 0],
+        "id":[1, 1, 1],
+        "is":[1, 1, 1]
+        
+    }],
+    "output":[{
+        "filename":"test_scene1.ppm",
+        "size":[500,500],
+        "lookat":[0,0,-1],
+        "up":[0,1,0],
+        "fov":90,
+        "centre":[0,0,0],
+        "ai":[1,1,1],
+        "bkc":[1,1,1]
+    }
+    ]
+}

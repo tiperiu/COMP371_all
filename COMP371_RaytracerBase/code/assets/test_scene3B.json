@@ -1,0 +1,79 @@
+{
+    "geometry":[{
+        "type":"rectangle",
+        "p1":[-20, -1, 0],
+        "p2":[20, -1, 0],
+        "p3":[20, -1, -20],
+        "p4":[-20, -1, -20],
+
+        
+        "ac":[1,0,0],
+        "dc":[1,0,0],
+        "sc":[1,1,1],
+        
+        "ka":0.1,
+        "kd":1,
+        "ks":1,
+        
+        "pc":10
+    
+    },
+        {
+            "type":"sphere",
+            "centre":[0, 0, -4],
+            "radius":1,
+            "ac":[1,1,1],
+            "dc":[0,0,1],
+            "sc":[1,1,1],
+            
+            "ka":0,
+            "kd":1,
+            "ks":1,
+            "pc":100
+        
+        }
+    
+    ],
+    "light":[
+        {
+        "type":"point",
+        "centre":[-1, 7, -5],
+        "id":[1, 1, 1],
+        "is":[1, 1, 1]
+    },
+        {
+            "type":"point",
+            "centre":[1,0.5,0],
+            "id":[1, 1, 1],
+            "is":[1, 1, 1]
+        }
+    ],
+    "output":[{
+        "filename":"test_scene3B.ppm",
+        "size":[500,500],
+        "lookat":[0,0,-1],
+        "up":[0,1,0],
+        "fov":60,
+        "centre":[0,0.5,0],
+        "ai":[1,1,1],
+        "bkc":[0.5,0.5,0.5],
+
+        "globalillum": false,
+        "raysperpixel": [10, 10]
+    },
+        {
+            "filename":"test_scene3B_aa.ppm",
+            "size":[500,500],
+            "lookat":[0,0,-1],
+            "up":[0,1,0],
+            "fov":60,
+            "centre":[0,0.5,0],
+            "ai":[1,1,1],
+            "bkc":[0.5,0.5,0.5],
+
+            "globalillum": false,
+            "antialiasing":true,
+            "raysperpixel": [10, 10]
+        }
+    ]
+}
