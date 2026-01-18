@@ -7,8 +7,10 @@
 // - https://learnopengl.com/Getting-started/Hello-Window
 // - https://learnopengl.com/Getting-started/Hello-Triangle
 
-
+#ifdef STUDENT_SOLUTION
 #include "src/A1solution.h"
+#endif
+
 #include <iostream>
 
 using namespace std;
