@@ -10,8 +10,8 @@
 #endif
 
 
-#define RADIUS2 .25
-//#define RADIUS2 4
+//#define RADIUS2 .25
+#define RADIUS2 4
 
 TTrackBall::TTrackBall()
     :scrWidth(0), scrHeight(0){

@@ -209,6 +209,24 @@ void ObjModel::dumpampl(const char* fname){
 
 }
 
+
+int ObjModel::GenerateA1Model(std::ostream& f){
+    
+
+    f<<vertex.size()<<endl;
+    for(int i=0;i<vertex.size();i+=1)
+        f<<vertex[i][0]<<" "<<vertex[i][1]<<" "<<vertex[i][2]<<std::endl;
+    
+    
+    f<<faces.size()<<endl;
+    for(int i=0;i<faces.size();i+=1){
+        for(int j=0;j<3;j+=1){
+            f<<faces[i][j]<<" ";
+        }
+        f<<endl;
+    }
+}
+
 int ObjModel::GenerateObjModel(std::ostream& f){
     
   // slap the material lib first

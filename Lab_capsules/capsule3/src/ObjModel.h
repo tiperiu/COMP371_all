@@ -91,6 +91,8 @@ class ObjModel {
     // UI 
     int GenerateObjModel(std::ostream& f);
     
+    int GenerateA1Model(std::ostream& f);
+    
     void add_spherical_coordinates(double radius, double width, double height);
    
 

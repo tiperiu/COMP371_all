@@ -118,7 +118,35 @@ namespace TAPP {
             while(m_objects.size()>1)
                 m_objects.pop_back();
         }
-        
+     
+        if (key == GLFW_KEY_S && state == GLFW_PRESS && m_objects.size()>0){
+            string s = "test.txt";
+            ofstream f(s);
+            if(!f){
+                cout<<"Canot open "<<s<<endl;
+            } else {
+                RenderModel* model = dynamic_cast<RenderModel*>(m_objects[0]);
+                if(model){
+                    for(int i=0;i<4;++i){
+                        for(int j=0;j<4;++j){
+                            f<<model->m_ViewMatrix[i][j]<<" ";
+                        }
+                        f<<endl;
+                    }
+                    for(int i=0;i<4;++i){
+                        for(int j=0l;j<4;++j){
+                            f<<model->m_ProjMatrix[i][j]<<" ";
+                        }
+                        f<<endl;
+                    }
+                    
+                    f<<m_width<<" "<<m_height<<endl;
+                    
+                    model->m_obj.GenerateA1Model(f);
+                }
+            }
+            
+        }
     }
     
     
